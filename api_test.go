@@ -17,7 +17,7 @@ func TestMain(m *testing.M) {
 
 func TestWordsAPI_Word(t *testing.T) {
 	api := New(apiKey)
-	word, err := api.Word(context.Background(), "hello")
+	word, err := api.Word(context.Background(), "apartment")
 	require.NoError(t, err)
-	require.Equal(t, "hello", word.Word)
+	require.Equal(t, "apartment", word.Word)
 }

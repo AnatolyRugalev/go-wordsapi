@@ -7,10 +7,14 @@ const WordAll = WordReference("all")
 type PartOfSpeech string
 
 const (
-	PoSNoun      = PartOfSpeech("noun")
-	PoSVerb      = PartOfSpeech("verb")
-	PoSAdjective = PartOfSpeech("adjective")
-	PoSAdverb    = PartOfSpeech("adverb")
+	PoSNoun         = PartOfSpeech("noun")
+	PoSPronoun      = PartOfSpeech("pronoun")
+	PoSVerb         = PartOfSpeech("verb")
+	PoSAdjective    = PartOfSpeech("adjective")
+	PoSAdverb       = PartOfSpeech("adverb")
+	PoSPreposition  = PartOfSpeech("preposition")
+	PoSConjuction   = PartOfSpeech("conjuction")
+	PoSInterjection = PartOfSpeech("interjection")
 )
 
 type WordResponse struct {
